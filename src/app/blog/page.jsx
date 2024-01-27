@@ -1,9 +1,57 @@
-import React from 'react'
-import styles from './page.module.css'
+import React from "react";
+import styles from "./page.module.css";
+import Link from "next/link";
+import Image from "next/image";
 const Blog = () => {
-    return(
-        <div className={styles.container}>Blog</div>
-    )
-}
+  return (
+    <div className={styles.mainContainer}>
+      <Link href="/blog/testId" className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="https://images.pexels.com/photos/4533596/pexels-photo-4533596.jpeg?cs=srgb&dl=pexels-ravi-kant-4533596.jpg&fm=jpg&w=1280&h=1925&_gl=1*1ynsve3*_ga*OTA3ODU5ODA0LjE3MDYxOTIwMjk.*_ga_8JE65Q40S6*MTcwNjI3OTU4Mi40LjEuMTcwNjI3OTYwMS4wLjAuMA.."
+            width={400}
+            height={250}
+            className={styles.image}
+            alt=""
+          />
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.desc}>Description</p>
+        </div>
+      </Link>
+      <Link href="/blog/testId" className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="https://images.pexels.com/photos/4533596/pexels-photo-4533596.jpeg?cs=srgb&dl=pexels-ravi-kant-4533596.jpg&fm=jpg&w=1280&h=1925&_gl=1*1ynsve3*_ga*OTA3ODU5ODA0LjE3MDYxOTIwMjk.*_ga_8JE65Q40S6*MTcwNjI3OTU4Mi40LjEuMTcwNjI3OTYwMS4wLjAuMA.."
+            width={400}
+            height={250}
+            className={styles.image}
+            alt=""
+          />
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.desc}>Description</p>
+        </div>
+      </Link>
+      <Link href="/blog/testId" className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="https://images.pexels.com/photos/4533596/pexels-photo-4533596.jpeg?cs=srgb&dl=pexels-ravi-kant-4533596.jpg&fm=jpg&w=1280&h=1925&_gl=1*1ynsve3*_ga*OTA3ODU5ODA0LjE3MDYxOTIwMjk.*_ga_8JE65Q40S6*MTcwNjI3OTU4Mi40LjEuMTcwNjI3OTYwMS4wLjAuMA.."
+            width={400}
+            height={250}
+            className={styles.image}
+            alt=""
+          />
+        </div>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.desc}>Description</p>
+        </div>
+      </Link>
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;

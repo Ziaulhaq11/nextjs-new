@@ -4,15 +4,19 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
+  console.log('api call started')
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
   if (!res.ok) {
     return notFound()
   }
+  console.log('api call done')
   return res.json();
 }
 
 const BlogPost = async ({params}) => {
-  const data = await getData(params.id)
+  console.log("Blog Post")
+  const data = getData(params.id)
+  console.log("After api")
   return (
     <div className={styles.container}>
       <div className={styles.top}>

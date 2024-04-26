@@ -33,3 +33,14 @@
     color: #eee;
     font-weight: bold;
 }
+
+.googleButton {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #bbb;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: bold;
+}

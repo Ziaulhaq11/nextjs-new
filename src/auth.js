@@ -7,7 +7,7 @@ import connectMongoDatabase from "./utils/db";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
-    // Google,
+    Google,
     Credentials({
       credentials: {
         email: {},

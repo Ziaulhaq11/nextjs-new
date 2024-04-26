@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 const Login = () => {
   const session = useSession();
   const router = useRouter();
-  if(session.status === "loading") {
-    return <p>Loading....</p>
+  if (session.status === "loading") {
+    return <p>Loading....</p>;
   }
 
   if (session.status === "authenticated") {
@@ -37,6 +37,9 @@ const Login = () => {
         />
         <button className={styles.button}>Login</button>
       </form>
+      <button onClick={() => signIn("google")} className={styles.googleButton}>
+        Signin with Google
+      </button>
     </div>
   );
 };

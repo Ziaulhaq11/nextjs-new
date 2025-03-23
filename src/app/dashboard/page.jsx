@@ -29,6 +29,7 @@ const Dashboard = () => {
     const desc = e.target[1].value;
     const img = e.target[2].value;
     const content = e.target[3].value;
+    console.log(title, desc, img, content)
 
     try {
       await fetch("/api/posts", {
